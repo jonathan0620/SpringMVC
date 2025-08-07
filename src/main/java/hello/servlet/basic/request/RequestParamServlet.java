@@ -42,7 +42,6 @@ public class RequestParamServlet extends HelloServlet {
             System.out.println("name = " + name);
         }
 
-        PrintWriter writer = response.getWriter();
-        writer.write("ok");
+        response.getWriter().write("ok");
     }
 }
